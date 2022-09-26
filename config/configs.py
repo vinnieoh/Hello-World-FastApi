@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 class Settings(BaseSettings):
     API_V1_STR: str = '/api/v1'
-    DB_URL: str = 'postgresql+asyncpg://postgres:root12345@localhost:5432/hello-world-fatsapi'
+    DB_URL: str = 'postgresql+asyncpg://root:root12345@db:5432/hello-world-fastapi'
     DBBaseModel = declarative_base()
 
     # Create new token in token_create.py
